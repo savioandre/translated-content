@@ -77,33 +77,33 @@ original_slug: MDN/Guidelines/Style_guide
  <li>Não use estilos e classes nos cabeçalhos; especificamente falando do elemento &lt;code&gt;. Portanto, não faça um cabeçalho "Usando a interface <code>SuperAmazingThing</code>". Em vez disso, escreva "Usando a interface SuperAmazingThing".</li>
 </ul>
 
-<h3 id="Text_Formatting" name="Text_Formatting">Text formatting and styles</h3>
+<h3 id="Text_Formatting" name="Text_Formatting">Formatação de texto e estilos</h3>
 
-<p>Use the "Formatting Styles" drop-down list to apply predefined styles to selected content.</p>
+<p>Use a lista suspensa "Formatting Styles" (Formatando estilos) para aplicar estilos predefinidos ao conteúdo selecionado.</p>
 
-<div class="note"><strong>Note: </strong>The "Note" style is used to call out important notes, like this one.</div>
+<div class="note"><strong>Nota: </strong>O estilo "Nota" é usado para chamar notas importantes, como esta.</div>
 
-<div class="warning"><strong>Warning:</strong> Similarly, the "Warning" style creates warning boxes like this.</div>
+<div class="warning"><strong>Aviso: </strong>Da mesma forma, o estilo "Aviso" cria caixas de aviso como esta.</div>
 
-<p>Unless specifically instructed to do so, <strong>do not</strong> use the HTML <code>style</code> attribute to manually style content. If you can't do it using a predefined class, drop into <a href="https://chat.mozilla.org/#/room/#mdn:mozilla.org">Matrix</a> and ask for help.</p>
+<p>A menos que seja especificamente instruído a fazer isso, <strong>não</strong> use o atributo HTML <code>style</code> para atribuir manualmente estilo ao conteúdo. Se você não puder fazer isso usando uma classe predefinida, vá até o <a href="https://chat.mozilla.org/#/room/#mdn:mozilla.org">Matrix</a> e peça ajuda.</p>
 
-<h3 id="Code_sample_style_and_formatting">Code sample style and formatting</h3>
+<h3 id="Code_sample_style_and_formatting">Estilo e formatação de amostra de código</h3>
 
-<h4 id="Tabs_and_line_breaks">Tabs and line breaks</h4>
+<h4 id="Tabs_and_line_breaks">Guias e quebras de linha</h4>
 
-<p>Use two spaces per tab in all code samples. Code should be indented cleanly, with open-brace ("{") characters on the same line as the statement that opens the block. For example:</p>
+<p>Use dois espaços por guia em todas as amostras de código. O código deve ser recuado de forma limpa, com caracteres de chave aberta ("{") na mesma linha que a instrução que abre o bloco. Por exemplo:</p>
 
 <pre class="brush: js notranslate">if (condition) {
-  /* handle the condition */
+  /* lidar com a condição */
 } else {
-  /* handle the "else" case */
+  /* lidar com o outro caso */
 }
 </pre>
 
-<p>Long lines shouldn't be allowed to stretch off horizontally to the extent that they require horizontal scrolling to read. Instead, break at natural breaking points. Some examples follow:</p>
+<p>Longas linhas não devem ser permitidas para esticar horizontalmente na medida em que requerem rolagem horizontal para ler. Em vez disso, quebre em pontos de ruptura naturais. Alguns exemplos seguem:</p>
 
-<pre class="brush: js notranslate">if (class.CONDITION || class.OTHER_CONDITION || class.SOME_OTHER_CONDITION
-       || class.YET_ANOTHER_CONDITION ) {
+<pre class="brush: js notranslate">if (class.CONDIÇÃO || class.OUTRA_CONDIÇÃO || class.ALGUMA_OUTRA_CONDIÇÃO
+       || class.AINDA_OUTRA_CONDIÇÃO ) {
   /* something */
 }
 
@@ -111,35 +111,35 @@ var toolkitProfileService = Components.classes["@mozilla.org/toolkit/profile-ser
                            .createInstance(Components.interfaces.nsIToolkitProfileService);
 </pre>
 
-<h4 id="Inline_code_formatting">Inline code formatting</h4>
+<h4 id="Inline_code_formatting">Formatação de código em linha</h4>
 
-<p>Use the "Code" button (labeled with two angle brackets "&lt;&gt;") to apply inline code-style formatting to function names, variable names, and method names (this uses the {{HTMLElement("code")}} element). For example, "the <code class="js plain">frenchText()</code> function".</p>
+<p>Use o botão "Código" (identificado com dois colchetes angulares "&lt;&gt;") para aplicar a formatação de estilo de código embutido a nomes de funções, nomes de variáveis e nomes de métodos (isso usa o elemento {{HTMLElement("code")}} ). Por exemplo, "a função <code class="js plain">frenchText()</code>".</p>
 
-<p>Method names should be followed by a pair of parentheses: <code>doSomethingUseful()</code>. This helps to differentiate methods from other code terms.</p>
+<p>Os nomes dos métodos devem ser seguidos por um par de par de parênteses:<code>doSomethingUseful()</code>. Isso ajuda a diferenciar métodos de outros termos de código.</p>
 
-<h4 id="Syntax_highlighting">Syntax highlighting</h4>
+<h4 id="Syntax_highlighting">Destaque da sintaxe</h4>
 
-<p><img alt='Screenshot of the "syntax highlighting" menu.' src="https://mdn.mozillademos.org/files/7857/syntax-highlighting-menu.png" style="border-style: solid; border-width: 1px; float: right; height: 315px; margin: 2px 4px; width: 183px;">Entire lines (or multiple lines) of code should be formatted using syntax highlighting rather than the {{HTMLElement("code")}} element. Click the "pre" button in the toolbar to create the preformatted content box in which you'll then write your code. Then, with the text entry cursor inside the code box, select the appropriate language from the language list button to the right of the "pre" button, as seen in the screenshot to the right. The following example shows text with JavaScript formatting:</p>
+<p><img alt='Screenshot of the "syntax highlighting" menu.' src="https://mdn.mozillademos.org/files/7857/syntax-highlighting-menu.png" style="border-style: solid; border-width: 1px; float: right; height: 315px; margin: 2px 4px; width: 183px;">Linhas inteiras (ou várias linhas) de código devem ser formatadas usando o destaque da sintaxe em vez do elemento {{HTMLElement("code")}}. Clique no botão "pre" na barra de ferramentas para criar a caixa de conteúdo pré-formada na qual você escreverá seu código. Em seguida, com o cursor de entrada de texto dentro da caixa de código, selecione o idioma apropriado do botão lista de idiomas à direita do botão "pre", como visto na captura de tela à direita. O exemplo a seguir mostra texto com formatação JavaScript:</p>
 
 <div class="line number2 index1 alt1">
 <pre class="brush: js notranslate">for (var i = 0, j = 9; i &lt;= 9; i++, j--)
   document.writeln("a[" + i + "][" + j + "]= " + a[i][j]);</pre>
 </div>
 
-<p>If no appropriate transformation is available, use the <code>pre</code> tag without specifying a language ("No Highlight" in the language menu).</p>
+<p>Se não houver transformação apropriada, use a tag <code>pre</code> sem especificar um idioma ("Sem destaque" no menu do idioma).</p>
 
 <pre class="notranslate">x = 42;</pre>
 
-<h4 id="Styling_HTML_element_references">Styling HTML element references</h4>
+<h4 id="Styling_HTML_element_references">Estilizando referências de elementos HTML</h4>
 
-<p>There are various specific rules to follow when writing about HTML elements, in order to consistently describe the various components of elements, and to ensure that they're properly linked to detailed documentation.</p>
+<p>Existem várias regras específicas a serem seguidas ao escrever sobre elementos HTML, a fim de descrever consistentemente os vários componentes dos elementos e garantir que eles sejam vinculados adequadamente à documentação detalhada.</p>
 
 <dl>
- <dt>Element names</dt>
- <dd>Use the {{TemplateLink("HTMLElement")}} macro, which creates a link to the page for that element. For example, writing \{{HTMLElement("title")}} produces "{{HTMLElement("title")}}". If you don't want to create a link, <strong>enclose the name in angle brackets</strong> and use "Code (inline)" style (e.g., <code>&lt;title&gt;</code>).</dd>
- <dt>Attribute names</dt>
- <dd>Use <strong>bold face</strong>.</dd>
- <dt>Attribute definitions</dt>
+ <dt>Nomes de elementos</dt>
+ <dd>Use a macro {{TemplateLink("HTMLElement")}}, que cria um link para a página desse elemento. Por exemplo, escrever \{{HTMLElement("title")}} produz "{{HTMLElement("title")}}". Se você não quiser criar um link, <strong>coloque o nome entre colchetes</strong> e use "Código (inline)" (por exemplo, <code>&lt;title&gt;</code>).</dd>
+ <dt>Nomes de atibutos</dt>
+ <dd>Use <strong>o negrito</strong>.</dd>
+ <dt>Definições de atributos</dt>
  <dd>Use the {{TemplateLink("htmlattrdef")}} macro (e.g., <span class="nowiki">\{{htmlattrdef("type")}}</span>) for the definition term, so that it can be linked to from other pages, then use the {{TemplateLink("htmlattrxref")}} macro (e.g., <span class="nowiki">\{{htmlattrxref("attr","element")}}</span>) to reference attribute definitions.</dd>
  <dt>Attribute values</dt>
  <dd>Use "Code (inline)" style, and do not use quotation marks around strings, unless needed by the syntax of a code sample. E.g.: When the <strong>type</strong> attribute of an <code>&lt;input&gt;</code> element is set to <code>email</code> or <code>tel</code> ...</dd>
