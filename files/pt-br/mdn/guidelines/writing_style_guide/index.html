@@ -77,30 +77,30 @@ original_slug: MDN/Guidelines/Style_guide
  <li>Não use estilos e classes nos cabeçalhos; especificamente falando do elemento &lt;code&gt;. Portanto, não faça um cabeçalho "Usando a interface <code>SuperAmazingThing</code>". Em vez disso, escreva "Usando a interface SuperAmazingThing".</li>
 </ul>
 
-<h3 id="Text_Formatting" name="Text_Formatting">Text formatting and styles</h3>
+<h3 id="Text_Formatting" name="Text_Formatting">Formatação de texto e estilos</h3>
 
-<p>Use the "Formatting Styles" drop-down list to apply predefined styles to selected content.</p>
+<p>Use a lista suspensa "Formatting Styles" (Formatando estilos) para aplicar estilos predefinidos ao conteúdo selecionado.</p>
 
-<div class="note"><strong>Note: </strong>The "Note" style is used to call out important notes, like this one.</div>
+<div class="note"><strong>Nota: </strong>O estilo "Nota" é usado para chamar notas importantes, como esta.</div>
 
-<div class="warning"><strong>Warning:</strong> Similarly, the "Warning" style creates warning boxes like this.</div>
+<div class="warning"><strong>Aviso: </strong>Da mesma forma, o estilo "Aviso" cria caixas de aviso como esta.</div>
 
-<p>Unless specifically instructed to do so, <strong>do not</strong> use the HTML <code>style</code> attribute to manually style content. If you can't do it using a predefined class, drop into <a href="https://chat.mozilla.org/#/room/#mdn:mozilla.org">Matrix</a> and ask for help.</p>
+<p>A menos que seja especificamente instruído a fazer isso, <strong>não</strong> use o atributo HTML <code>style</code> para atribuir manualmente estilo ao conteúdo. Se você não puder fazer isso usando uma classe predefinida, vá até o <a href="https://chat.mozilla.org/#/room/#mdn:mozilla.org">Matrix</a> e peça ajuda.</p>
 
-<h3 id="Code_sample_style_and_formatting">Code sample style and formatting</h3>
+<h3 id="Code_sample_style_and_formatting">Estilo e formatação de amostra de código</h3>
 
-<h4 id="Tabs_and_line_breaks">Tabs and line breaks</h4>
+<h4 id="Tabs_and_line_breaks">Guias e quebras de linha</h4>
 
-<p>Use two spaces per tab in all code samples. Code should be indented cleanly, with open-brace ("{") characters on the same line as the statement that opens the block. For example:</p>
+<p>Use dois espaços por guia em todas as amostras de código. O código deve ser recuado de forma limpa, com caracteres de chave aberta ("{") na mesma linha que a instrução que abre o bloco. Por exemplo:</p>
 
 <pre class="brush: js notranslate">if (condition) {
-  /* handle the condition */
+  /* lidar com a condição */
 } else {
-  /* handle the "else" case */
+  /* lidar com o outro caso */
 }
 </pre>
 
-<p>Long lines shouldn't be allowed to stretch off horizontally to the extent that they require horizontal scrolling to read. Instead, break at natural breaking points. Some examples follow:</p>
+<p>‎Longas linhas não devem ser permitidas para esticar horizontalmente na medida em que requerem rolagem horizontal para ler. Em vez disso, quebre em pontos de ruptura naturais. Alguns exemplos seguem:</p>
 
 <pre class="brush: js notranslate">if (class.CONDITION || class.OTHER_CONDITION || class.SOME_OTHER_CONDITION
        || class.YET_ANOTHER_CONDITION ) {
